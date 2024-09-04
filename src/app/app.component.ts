@@ -21,7 +21,19 @@ export class AppComponent {
   }
   
   getUsers(){
-            return this.http.get('http://127.0.0.1:8000/api/method/voicebank.voicebank_api.voice_data?language=tamil&gender&slang&age');
+            return this.http.get('http://voicebank.sagasoft.io/api/method/voicebank.www.voicebank.search?language=tamil&slang=&gender=male&age=');
+    
+  }
+  postUsers(){
+    return this.http.post<any>(
+      'http://voicebank.sagasoft.io/api/method/voicebank.www.enquery.search',
+      {
+        cust_name: '',
+        email_id: '',
+        phone_number: '',
+        member_id_list: ''
+      }
+    );
     
   }
 }
