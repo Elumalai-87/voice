@@ -50,8 +50,11 @@ $ cd project_name
 
 Step2:
 You may create the certain component ﬁle for your convenient by using the command:
+
 $ ng generate component ﬁle_name
+
          Or
+
 $ ng g c ﬁle_name
    Then the component ﬁle may created.
 
